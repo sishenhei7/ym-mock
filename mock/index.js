@@ -1,14 +1,8 @@
-// import Mock from 'mockjs';
+import Mock from 'mockjs';
 // import { param2Obj } from '../src/utils';
 
-const Mock = require('mockjs');
-const { param2Obj } = require('../utils');
-
-// import user from './user';
-// import article from './article';
-
-const user = require('./user');
-const article = require('./article');
+import user from './user';
+import article from './article';
 
 const mocks = [
   ...user,
@@ -69,6 +63,6 @@ const responseFake = (url, type, respond) => {
   };
 }
 
-module.exports = mocks.map(route => {
+export default mocks.map(route => {
   return responseFake(route.url, route.type, route.response);
-})
+});

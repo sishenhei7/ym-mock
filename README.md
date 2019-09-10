@@ -8,7 +8,7 @@ data mock for front end
 ## Getting start
 
 ```
-node server.js
+npm run server
 ```
 
 然后打开[http://localhost:1234/mock/article/list](http://localhost:1234/mock/article/list)就可以查看示例了。

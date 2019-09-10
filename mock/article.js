@@ -1,5 +1,4 @@
-// import Mock from 'mockjs';
-const Mock = require('mockjs');
+import Mock from 'mockjs';
 
 const List = [];
 const count = 100;
@@ -28,7 +27,7 @@ for (let i = 0; i < count; i++) {
   }));
 }
 
-module.exports = [
+export default [
   {
     url: '/article/list',
     type: 'get',
@@ -57,7 +56,6 @@ module.exports = [
       }
     }
   },
-
   {
     url: '/article/detail',
     type: 'get',
@@ -73,7 +71,6 @@ module.exports = [
       }
     }
   },
-
   {
     url: '/article/pv',
     type: 'get',
@@ -91,7 +88,6 @@ module.exports = [
       }
     }
   },
-
   {
     url: '/article/create',
     type: 'post',
@@ -102,7 +98,6 @@ module.exports = [
       }
     }
   },
-
   {
     url: '/article/update',
     type: 'post',

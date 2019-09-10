@@ -22,7 +22,7 @@ const users = {
   }
 }
 
-module.exports = [
+export default [
   // user login
   {
     url: '/user/login',
@@ -80,4 +80,4 @@ module.exports = [
       }
     }
   }
-]
+];

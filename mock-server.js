@@ -7,7 +7,7 @@ const path = require('path');
 const mockDir = path.join(process.cwd(), 'mock');
 
 function registerRoutes(app) {
-  const mocks = require('./mock/index.js');
+  const mocks = require('./mock/index.js').default;
 
   let mockLastIndex;
 
@@ -34,7 +34,7 @@ function unregisterRoutes() {
 
 module.exports = app => {
   // es6 polyfill
-  require('@babel/register');
+  // require('@babel/register');
 
   // parse app.body
   // https://expressjs.com/en/4x/api.html#req.body
