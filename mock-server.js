@@ -33,9 +33,6 @@ function unregisterRoutes() {
 }
 
 module.exports = app => {
-  // es6 polyfill
-  // require('@babel/register');
-
   // parse app.body
   // https://expressjs.com/en/4x/api.html#req.body
   app.use(bodyParser.json());
