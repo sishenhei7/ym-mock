@@ -11,4 +11,6 @@ data mock for front end
 npm run server
 ```
 
-然后打开[http://localhost:1234/mock/article/list](http://localhost:1234/mock/article/list)就可以查看示例了。
+然后打开[http://localhost:1234/mock/article/list](http://localhost:1234/api/article/list)就可以查看示例了。
+
+其中，[blogs.js](./mock/blogs.js) 里面有增删改查的例子。
